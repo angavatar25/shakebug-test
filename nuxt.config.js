@@ -1,5 +1,9 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target: 'statis',
+  generate: {
+    fallback: true,
+  },
   head: {
     title: 'test-shakebug',
     htmlAttrs: {
