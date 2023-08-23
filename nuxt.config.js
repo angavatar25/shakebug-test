@@ -1,5 +1,3 @@
-const SHAKEBUG_KEY = "nbhJocnj2VbhsTkGEf7bajwVSM2I7A";
-
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: 'statis',
@@ -29,7 +27,7 @@ export default {
         src: "https://www.shakebug.com/assets/js/shakebug-min-1.0.js",
         'id': "apikey",
         'isReportingIconVisible': 'true',
-        'apikey': {SHAKEBUG_KEY},
+        'apikey': "nbhJocnj2VbhsTkGEf7bajwVSM2I7A",
         async: true,
       },
     ],
