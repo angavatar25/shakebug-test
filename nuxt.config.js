@@ -1,10 +1,13 @@
-const { SHAKEBUG_KEY } = process.env;
+const SHAKEBUG_KEY = "nbhJocnj2VbhsTkGEf7bajwVSM2I7A";
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: 'statis',
   generate: {
     fallback: true,
+  },
+  env: {
+    NODE_ENV: process.env.NODE_ENV
   },
   head: {
     title: 'test-shakebug',
@@ -21,8 +24,13 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { type: 'text/javascript', src: 'https://www.shakebug.com/assets/js/shakebug-min-1.0.js',
-        id: {SHAKEBUG_KEY}, isReportingIconVisible: 'false', apikey: {SHAKEBUG_KEY},
+      {
+        type: "text/javascript",
+        src: "https://www.shakebug.com/assets/js/shakebug-min-1.0.js",
+        'id': "apikey",
+        'isReportingIconVisible': 'true',
+        'apikey': {SHAKEBUG_KEY},
+        async: true,
       },
     ],
   },

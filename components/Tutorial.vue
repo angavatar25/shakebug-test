@@ -46,7 +46,23 @@
 </template>
 
 <script>
+const SHAKEBUG_KEY = "nbhJocnj2VbhsTkGEf7bajwVSM2I7A";
+
 export default {
-  name: 'NuxtTutorial'
+  name: 'NuxtTutorial',
+  head() {
+    return {
+      script: [
+        {
+          type: "text/javascript",
+          src: "https://www.shakebug.com/assets/js/shakebug-min-1.0.js",
+          'id': 'nbhJocnj2VbhsTkGEf7bajwVSM2I7A',
+          'isReportingIconVisible': 'true',
+          apikey: 'nbhJocnj2VbhsTkGEf7bajwVSM2I7A',
+          async: true,
+        },
+      ],
+    }
+  }
 }
 </script>
